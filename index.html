@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="reset stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <div>Time: <span id="timer">0</span></div>
+
+  <div class="main">
+    <div id="landing-page" class="landing">
+      <h2>Star Wars Trivia</h2>
+      <p>
+        Test your useless knowledge by answering the following Star Wars trivia questions within the time limit. Wrong answers will cost you time! May the Force be with you.
+      </p>
+      <button id="start">Begin</button>
+    </div>
+
+    <div id="questions" class="hide">
+      <h2 id="question-title"></h2>
+      <div id="options" class="options"></div>
+    </div>
+
+    <div id="game-over" class="hide">
+      <h2>In my experience, there's no such thing as luck.</h2>
+      <p>Final Score: <span id="final-score"></span>.</p>
+      <p>
+        ENTER YOUR INITIALS: <input type="text" id="initials"/>
+        <button id="submit">Submit</button>
+      </p>
+    </div>
+
+  </div>
+
+  <script src="./assets/js/javascript.js"></script>
+</body>
+
+</html>
