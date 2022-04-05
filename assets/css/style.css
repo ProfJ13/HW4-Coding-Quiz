@@ -1,0 +1,32 @@
+body {
+  font-family: 'News Gothic MT', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #000000;
+  color: #FFE81F;
+  font-size: 32px;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 8px 14px;
+  border: 0;
+}
+
+.timer {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.main {
+  margin: 80px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
