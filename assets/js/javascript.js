@@ -25,6 +25,8 @@ function countdown() {
   timerEl.textContent = time;
   time--;
 
+  if (time <= 0)
+    endQuiz();
 }
 
 // Questions and answers
@@ -83,3 +85,16 @@ var questions = [
     answer: "Lieutenant Kaydel Connix"
   }
 ];
+
+function endQuiz() {
+  questionsEl.setAttribute("class", "hide");
+
+  var gameOverEl = document.getElementById("game-over");
+  gameOverEl.setAttribute("class", " ");
+
+  var finalScoreEl = document.getElementById("final-score");
+  finalScoreEl.textContent = time;
+
+  clearInterval(timerId);
+  timerEl.textContent = time;
+}
