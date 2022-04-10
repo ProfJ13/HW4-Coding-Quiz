@@ -4,14 +4,16 @@ var questionsEl = document.getElementById("questions");
 var optionsEl = document.getElementById("options");
 var submitBtn = document.getElementById("submit");
 var initialsEl = document.getElementById("initials");
-var time = questions.length * 10;
+
+const quizLength = 10;
+var time = quizLength * 12;
 var timerId;
 
 function beginQuiz() {
   var landingPage = document.getElementById("landing-page");
   landingPage.setAttribute("class", "landing hide");
 
-  questionsEl.setAttribute("class", " ");
+  questionsEl.setAttribute("class", "questions");
 
   timerId = setInterval(function () {
     countdown();
@@ -85,6 +87,12 @@ var questions = [
     answer: "Lieutenant Kaydel Connix"
   }
 ];
+
+function pullQuestion() {
+
+}
+
+startBtn.onclick = beginQuiz;
 
 function endQuiz() {
   questionsEl.setAttribute("class", "hide");
